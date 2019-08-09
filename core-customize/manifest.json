@@ -60,7 +60,21 @@
         "odata2webservicesfeaturetests",
         "kymaintegrationbackoffice",
         "kymaintegrationsampledata",
-		"yacceleratorstorefront"
+		"yacceleratorstorefront",
+		"integrationbackoffice",
+		"sapcoreaddon",
+		"sapcoreconfigurationbackoffice",
+		"sapmodelbackoffice",
+		"sapcustomerb2bbackoffice",
+		"ysapomsfulfillment",
+		"sapcpiadapter",
+		"sapcpiproductexchange",
+		"sapcpicustomerexchange",
+		"sapcpicustomerexchangeb2b",
+		"sapcpiorderexchangeoms",
+		"sapcpiorderexchangeomsb2b",
+		"saporderexchangebackoffice",
+		"sapcoretest"
     ],
 	 "useConfig":{
         "properties": [
@@ -127,6 +141,11 @@
         },
 		{
             "addon": "personalizationsearchsamplesaddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        },
+		{
+            "addon": "sapcoreaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
