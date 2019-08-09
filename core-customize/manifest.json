@@ -73,7 +73,7 @@
 	 "useConfig":{
         "properties": [
             {
-                "location": "C:/MKParth/mkb2bstore/core-customize/config/local.properties"
+                "location": "config/local.properties"
             }
 	]
 	},
