@@ -70,12 +70,13 @@
         "kymaintegrationsampledata",
 		"yacceleratorstorefront"
     ],
-	 "useConfig":
+	 "useConfig":{
         "properties": [
             {
                 "location": "C:/MKParth/mkb2bstore/core-customize/config/local.properties"
             }
-	],
+	]
+	},
 	"storefrontAddons": [
         {
             "addon": "b2bacceleratoraddon",
