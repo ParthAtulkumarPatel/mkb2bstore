@@ -77,6 +77,9 @@
 		"sapcoretest"
     ],
 	 "useConfig":{
+		"solr": {
+            "location": "config/solr"
+        },
         "properties": [
             {
                 "location": "config/local.properties"
