@@ -387,14 +387,11 @@
 		-->
 	</requestHandler>
 	
-	<requestHandler name="standard" class="solr.StandardRequestHandler" default="true"> 
-
-	<!-- Uncomment this to change https support or timeouts --> 
-	<shardHandlerFactory name="shardHandlerFactory" class="HttpShardHandlerFactory"> 
-	<str name="urlScheme">https://</str> 
-	<!-- <int name="socketTimeout">1000</int> --> 
-	<!-- <int name="connTimeout">5000</int> --> 
-	</shardHandlerFactory> 
+	<requestHandler name="standard" class="solr.SearchHandler" default="true">
+	  <!-- other params go here -->
+	  <shardHandlerFactory class="HttpShardHandlerFactory">
+		<str name="urlScheme">https://</str>
+	  </shardHandlerFactory>
 	</requestHandler>
 
 	<queryParser name="multiMaxScore" class="de.hybris.platform.solr.search.MultiMaxScoreQParserPlugin" />
