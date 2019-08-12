@@ -67,6 +67,7 @@
 		"sapmodelbackoffice",
 		"sapcustomerb2bbackoffice",
 		"ysapomsfulfillment",
+		"ysaporderfulfillment",
 		"sapcpiadapter",
 		"sapcpiproductexchange",
 		"sapcpicustomerexchange",
@@ -74,8 +75,7 @@
 		"sapcpiorderexchangeoms",
 		"sapcpiorderexchangeomsb2b",
 		"saporderexchangebackoffice",
-		"sapcoretest",
-		"ysaporderfulfillment"
+		"sapcoretest"
     ],
 	 "useConfig":{
 		"solr": {
