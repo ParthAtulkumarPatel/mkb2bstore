@@ -75,7 +75,9 @@
 		"sapcpiorderexchangeomsb2b",
 		"saporderexchangebackoffice",
 		"sapcoretest",
-		"ysaporderfulfillment"
+		"ysaporderfulfillment",
+		"yorderfulfillment",
+		"sapcpiorderexchangeb2b"
     ],
 	 "useConfig":{
 		"solr": {
