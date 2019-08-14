@@ -4,7 +4,6 @@
 		"adaptivesearchsolr",
         "adaptivesearchbackoffice",
         "adaptivesearchsamplesaddon",
-		"ordermanagementaddon",
         "adaptivesearchwebservices",
         "b2bcommercebackoffice",
         "solrfacetsearchbackoffice",
@@ -77,14 +76,7 @@
 		"saporderexchangebackoffice",
 		"sapcoretest",
 		"ysaporderfulfillment",
-		"sapcpiorderexchangeb2b",
-		"ordermanagementwebservices",
-		"warehousingbackoffice",
-		"warehousingwebservices",
-		"yaddon",
-		"consignmenttrackingbackoffice",
-		"consignmenttrackingaddon",
-		"consignmenttrackingoccaddon"
+		"sapcpiorderexchangeb2b"
     ],
 	 "useConfig":{
 		"solr": {
@@ -154,11 +146,6 @@
             "template": "yacceleratorstorefront"
         },
 		{
-            "addon": "ordermanagementaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-		{
             "addon": "pcmbackofficesamplesaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
@@ -170,26 +157,6 @@
         },
 		{
             "addon": "sapcoreaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-		{
-            "addon": "sapcoreaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-		{
-            "addon": "yaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-		{
-            "addon": "consignmenttrackingaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        },
-		{
-            "addon": "consignmenttrackingoccaddon",
             "storefront": "yacceleratorstorefront",
             "template": "yacceleratorstorefront"
         }
