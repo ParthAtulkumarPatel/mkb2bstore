@@ -278,11 +278,7 @@
         {
           "name": "ycommercewebservices",
           "contextPath": "/rest"
-        },
-		{
-		"name": "smartedit",
-         "contextPath": "/smartedit"
-		}
+        }
       ]
     },
     {
