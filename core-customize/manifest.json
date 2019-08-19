@@ -17,63 +17,66 @@
         "solrserver",
         "acceleratorwebservicesaddon",
         "b2bacceleratoraddon",
-        "commerceorgaddon",
-        "commerceorgsamplesaddon",
-        "customersupportbackoffice",
-        "customerticketingaddon",
-        "rulebuilderbackoffice",
-        "couponbackoffice",
-        "droolsruleengineservices",
-        "couponfacades",
-        "couponservices",
-        "promotionenginesamplesaddon",
-        "textfieldconfiguratortemplatebackoffice",
-        "textfieldconfiguratortemplateaddon",
-        "cmswebservices",
-        "smarteditwebservices",
-        "cmssmarteditwebservices",
-        "permissionswebservices",
-        "smarteditaddon",
-        "cmssmartedit",
-        "cmsbackoffice",
-        "assistedservicestorefront",
-        "assistedservicewebservices",
-        "cmsoccaddon",
-        "previewpersonalizationweb",
-        "personalizationcmsweb",
-        "personalizationsmartedit",
-        "personalizationpromotionssmartedit",
-        "personalizationsampledataaddon",
-        "personalizationpromotionssampledataaddon",
-        "personalizationpromotions",
-        "personalizationpromotionsweb",
-        "personalizationservicesbackoffice",
-        "personalizationpromotionsbackoffice",
-        "personalizationcmsbackoffice",
-        "personalizationsearchbackoffice",
-        "personalizationsearchsmartedit",
-        "personalizationsearchweb",
-        "personalizationsearchsamplesaddon",
-        "pcmbackofficesamplesaddon",
-        "outboundservices",
-        "odata2webservices",
-        "odata2webservicesfeaturetests",
-        "kymaintegrationbackoffice",
-        "kymaintegrationsampledata",
-		"yacceleratorstorefront",
-		"integrationbackoffice",
-		"sapcoreaddon",
-		"sapcoreconfigurationbackoffice",
-		"sapmodelbackoffice",
-		"sapcustomerb2bbackoffice",
-		"sapcpiadapter",
-		"sapcpiproductexchange",
-		"sapcpicustomerexchange",
-		"sapcpicustomerexchangeb2b",
-		"saporderexchangebackoffice",
-		"sapcoretest",
-		"ysaporderfulfillment",
-		"sapcpiorderexchangeb2b"
+        "commerceorgaddon",	
+"commerceorgsamplesaddon",
+"customersupportbackoffice",
+"customerticketingaddon",
+"rulebuilderbackoffice",
+"couponbackoffice",
+"droolsruleengineservices",
+"couponfacades",
+"couponservices",
+"promotionenginesamplesaddon",
+"textfieldconfiguratortemplatebackoffice",
+"textfieldconfiguratortemplateaddon",
+"cmswebservices",
+"smarteditwebservices",
+"cmssmarteditwebservices",
+"permissionswebservices",
+"smarteditaddon",
+"cmssmartedit",
+"cmsbackoffice",
+"assistedservicestorefront",
+"assistedservicewebservices",
+"cmsoccaddon",
+"previewpersonalizationweb",
+"personalizationcmsweb",
+"personalizationsmartedit",
+"personalizationpromotionssmartedit",
+"personalizationsampledataaddon",
+"personalizationpromotionssampledataaddon",
+"personalizationpromotions",
+"personalizationpromotionsweb",
+"personalizationservicesbackoffice",
+"personalizationpromotionsbackoffice",
+"personalizationcmsbackoffice",
+"personalizationsearchbackoffice",
+"personalizationsearchsmartedit",
+"personalizationsearchweb",
+"personalizationsearchsamplesaddon",
+"pcmbackofficesamplesaddon",
+"outboundservices",
+"odata2webservices",
+"odata2webservicesfeaturetests",
+"kymaintegrationbackoffice",
+"kymaintegrationsampledata",
+"yacceleratorstorefront",
+"integrationbackoffice",
+"sapcoreaddon",
+"sapcoreconfigurationbackoffice",
+"sapmodelbackoffice",
+"sapcustomerb2bbackoffice",
+"ysapomsfulfillment",
+"sapcpiadapter",
+"sapcpiproductexchange",
+"sapcpicustomerexchange",
+"sapcpicustomerexchangeb2b",
+"sapcpiorderexchangeoms",
+"sapcpiorderexchangeomsb2b",
+"saporderexchangebackoffice",
+"sapcoretest",
+"ysaporderfulfillment",
+"sapcpiorderexchangeb2b" 
     ],
 	 "useConfig":{
 		"solr": {
@@ -184,7 +187,11 @@
         {
           "name": "backoffice",
           "contextPath": ""
-        }
+        },
+		{
+		"name": "smartedit",
+         "contextPath": "/smartedit"
+		}
       ]
     },
     {
@@ -210,7 +217,7 @@
         },
         {
           "name": "yacceleratorstorefront",
-          "contextPath": ""
+          "contextPath": "/yacceleratorstorefront"
         },
         {
           "name": "b2ctelcowebservices",
@@ -271,7 +278,11 @@
         {
           "name": "ycommercewebservices",
           "contextPath": "/rest"
-        }
+        },
+		{
+		"name": "smartedit",
+         "contextPath": "/smartedit"
+		}
       ]
     },
     {
@@ -289,7 +300,11 @@
 		{
           "name": "acceleratorservices",
           "contextPath": "/acceleratorservices"
-        }
+        },
+		{
+		"name": "smartedit",
+         "contextPath": "/smartedit"
+		}
       ]
     }
   ]
