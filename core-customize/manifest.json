@@ -87,68 +87,68 @@
 	"storefrontAddons": [
         {
             "addon": "b2bacceleratoraddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "customerticketingaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "commerceorgaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "assistedservicestorefront",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "commerceorgsamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "textfieldconfiguratortemplateaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 	    {
             "addon": "promotionenginesamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "orderselfserviceaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "adaptivesearchsamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "pcmbackofficesamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "personalizationsearchsamplesaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         },
 		{
             "addon": "sapcoreaddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
+            "storefront": "mediakindstorefront",
+            "template": "mediakindstorefront"
         }
     ],
           "aspects": [
@@ -190,11 +190,7 @@
         {
           "key": "spring.session.enabled",
           "value": "false"
-        },
-        {
-          "key": "storefrontContextRoot",
-          "value": "/yacceleratorstorefront"
-		}
+        }
       ],
       "webapps": [
         {
@@ -204,10 +200,6 @@
 		{
           "name": "acceleratorservices",
           "contextPath": "/acceleratorservices"
-        },
-        {
-          "name": "yacceleratorstorefront",
-          "contextPath": "/yacceleratorstorefront"
         },
         {
           "name": "b2ctelcowebservices",
