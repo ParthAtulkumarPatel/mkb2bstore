@@ -40,6 +40,7 @@
 		"previewwebservices",
 		"cmssmarteditwebservices",
 		"cmsoccaddon",
+		"commerceorgaddon",
 		"previewpersonalizationweb",
 		"personalizationcmsweb",
 		"personalizationsmartedit",
@@ -64,7 +65,6 @@
 		"outboundservices",
 		"odata2webservices",
 		"odata2webservicesfeaturetests",
-		
 		"sapcpiadapter",
 		"ysaporderfulfillment",
 		"sapcpiorderexchange",
@@ -142,11 +142,6 @@
         },
 		{
             "addon": "personalizationsearchsamplesaddon",
-            "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
-        },
-		{
-            "addon": "sapcoreaddon",
             "storefront": "mediakindstorefront",
             "template": "mediakindstorefront"
         }
