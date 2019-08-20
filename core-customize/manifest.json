@@ -1,13 +1,6 @@
 {
     "commerceSuiteVersion": "1811.1",
     "extensions": [
-		"mediakindfulfilmentprocess",
-		"mediakindcore",
-		"mediakindinitialdata",
-        "mediakindfacades",
-        "mediakindtest",
-        "mediakindstorefront",
-        "mediakindbackoffice",
 		"adaptivesearchsolr",
 		"adaptivesearchbackoffice",
 		"adaptivesearchsamplesaddon",
@@ -80,7 +73,7 @@
 	],
 	 "useConfig":{
 		"extensions": {
-            "location": "custom"
+            "location": "config/localextensions.xml"
         },
 		"solr": {
             "location": "config/solr"
@@ -91,12 +84,6 @@
             }
 	]
 	},
-	"properties": [
-        {
-            "key": "yacceleratorstorefront.webroot",
-            "value": "/yacceleratorstorefront"
-        }
-    ],
 	"storefrontAddons": [
         {
             "addon": "b2bacceleratoraddon",

@@ -1,0 +1,12 @@
+<hybrisconfig xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:noNamespaceSchemaLocation='../bin/platform/resources/schemas/extensions.xsd'>
+  <extensions>
+    <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
+		<extension name="mediakindfulfilmentprocess"/>
+		<extension name="mediakindcore"/>
+		<extension name="mediakindinitialdata"/>
+        <extension name="mediakindfacades"/>
+        <extension name="mediakindtest"/>
+        <extension name="mediakindstorefront"/>
+        <extension name="mediakindbackoffice"/>
+  </extensions>
+</hybrisconfig>
