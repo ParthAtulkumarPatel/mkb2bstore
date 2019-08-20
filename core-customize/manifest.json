@@ -88,62 +88,62 @@
         {
             "addon": "b2bacceleratoraddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "customerticketingaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "assistedservicestorefront",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgsamplesaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "textfieldconfiguratortemplateaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 	    {
             "addon": "promotionenginesamplesaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "orderselfserviceaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "adaptivesearchsamplesaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "pcmbackofficesamplesaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "personalizationsearchsamplesaddon",
             "storefront": "mediakindstorefront",
-            "template": "mediakindstorefront"
+            "template": "yacceleratorstorefront"
         }
     ],
           "aspects": [
