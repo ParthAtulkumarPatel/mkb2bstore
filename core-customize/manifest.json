@@ -255,6 +255,10 @@
         {
           "name": "ycommercewebservices",
           "contextPath": "/rest"
+        },
+		{
+			"name": "mediakindstorefront",
+            "contextPath": ""
         }
       ]
     },
