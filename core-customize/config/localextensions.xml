@@ -2,6 +2,7 @@
   <extensions>
     <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
 	<path dir='${HYBRIS_BIN_DIR}/ext-integration/sap' autoload='false' />
+	<path dir='${HYBRIS_BIN_DIR}/custom' autoload='false' />
 	<!-- <extension name="mediakindfulfilmentprocess"/>
 	<extension name="mediakindcore"/>
 	<extension name="mediakindinitialdata"/>
