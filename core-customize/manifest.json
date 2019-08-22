@@ -1,5 +1,9 @@
 {
     "commerceSuiteVersion": "1811.1",
+	"extensions":
+	[
+	
+	],
 	 "useConfig":{
 		"extensions": {
             "location": "config/localextensions.xml"
