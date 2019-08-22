@@ -21,42 +21,42 @@
         {
             "addon": "b2bacceleratoraddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgaddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "assistedservicestorefront",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgsamplesaddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 	    {
             "addon": "promotionenginesamplesaddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
             "addon": "adaptivesearchsamplesaddon",
             "storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
         },
 		{
 			"addon":"sapcoreaddon",
 			"storefront": "yb2bacceleratorstorefront",
-            "template": "yb2bacceleratorstorefront"
+            "template": "yacceleratorstorefront"
 		}
     ],
 		"aspects": [
