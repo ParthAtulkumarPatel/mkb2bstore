@@ -119,7 +119,11 @@
 		 "key":"smarteditaddon.javascript.paths.responsive",
           "value":"/shared/common/js/webApplicationInjector.js?allow-origin=backoffice.c2n6r2d-mksystems1-d1-public.model-t.cc.commerce.ondemand.com:443;/shared/common/js/reprocessPage.js;/shared/common/js/adjustComponentRenderingToSE.js;/responsive/common/js/smarteditaddon.js",
 		  "persona": "development"
-		}
+		},
+		{
+            "key":"storefrontContextRoot",
+            "value":""
+        }
       ],
       "webapps": [
 		{
