@@ -20,3 +20,13 @@ $prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1Pr
 $approved=approvalstatus(code)[default='approved']
 
 UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;Europe1PriceFactory_PTG(code)
+
+
+INSERT_UPDATE PriceRow;productId[unique=true];unit(code[unique=true,default=pieces]);currency(isocode)[unique=true];price;minqtd;unitFactor;net
+;360event1;pieces;USD;20,0;1;1;false
+;360event2;pieces;USD;25,0;1;1;false
+;abrchannels1;pieces;USD;35,0;1;1;false
+;abrchannel2;pieces;USD;46,0;1;1;false
+;packagingproduct1;pieces;USD;95,0;1;1;false
+;dvrsub1;pieces;USD;100,0;1;1;false
+;dvrsub2;pieces;USD;150,0;1;1;false

@@ -18,11 +18,40 @@ $vendor=mediakind
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
 
-INSERT_UPDATE Vendor;code[unique=true]
-#;$vendor
+# Vendor
+INSERT_UPDATE Vendor;code[unique=true];name
+;mkDefault;MK Default Vendor
+;mediakind;Mediakind
 
-INSERT_UPDATE Warehouse;code[unique=true];vendor(code);default[default=true]
+INSERT_UPDATE Warehouse;code[unique=true];name;vendor(code)[default=default, forceWrite=true];default[default=true, forceWrite=true]
+"#% beforeEach:
+import de.hybris.platform.core.Registry;
+import de.hybris.platform.ordersplitting.model.WarehouseModel;
+String warehouseCode = line.get(Integer.valueOf(1));
+WarehouseModel warehouse;
+try
+{
+    warehouse = Registry.getApplicationContext().getBean(""warehouseService"").getWarehouseForCode(warehouseCode);
+}
+catch (Exception e)
+{
+    warehouse = null;
+}
+if (warehouse != null)
+{
+    line.clear();
+}"
+;mkDefault;mkDefault Warehouse;
+;mk_warehouse_s;;mediakind
+;mk_warehouse_e;;mediakind
+;mk_warehouse_w;;mediakind
+;mk_warehouse_n;;mediakind
 
-INSERT_UPDATE StockLevel;available;warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
-
-UPDATE Product;code[unique=true];$catalogVersion;stockLevels(productCode,warehouse(code));vendors(code)
+# Create Stock levels at the Warehouses for Products
+INSERT_UPDATE StockLevel;available[unique=true];warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;360event1;0;
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;360event2;0;
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannels1;0;
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannel2;0;
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;packagingproduct1;0;
+;10;mk_warehouse_s ;forceInStock;0;0;0;0;dvrsub1;0;

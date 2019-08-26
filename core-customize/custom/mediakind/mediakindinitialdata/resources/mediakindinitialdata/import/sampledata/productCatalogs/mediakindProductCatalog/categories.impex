@@ -17,9 +17,21 @@ $productCatalogName=Mediakind Product Catalog
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 $supercategories=source(code, $catalogVersion)[unique=true]
 $categories=target(code, $catalogVersion)[unique=true]
+$lang=en
 
 # Insert Categories
 INSERT_UPDATE Category;code[unique=true];allowedPrincipals(uid)[default='customergroup'];$catalogVersion
 
 # Insert Category Structure
 INSERT_UPDATE CategoryCategoryRelation;$categories;$supercategories
+
+# Insert Categories
+INSERT_UPDATE Category;code[unique=true];name[lang=$lang];$catalogVersion;
+;360event;360 Event;
+;abrchannels;ABR Channels;
+;packagingproducts;Packaging Products;
+;dvrsubs;DVR Subs;
+;dvrsubs;DVR Subs;
+;packagingproducts;Packaging Products;
+;abrchannels;ABR Channels;
+;360event;360 Event;

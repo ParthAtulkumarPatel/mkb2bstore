@@ -1,7 +1,7 @@
 /*
  * ----------------------------------------------------------------
  * --- WARNING: THIS FILE IS GENERATED AND WILL BE OVERWRITTEN! ---
- * --- Generated at Aug 22, 2019 5:45:48 PM                     ---
+ * --- Generated at Aug 26, 2019 2:49:15 PM                     ---
  * ----------------------------------------------------------------
  */
 package com.mediakind.initialdata.constants;

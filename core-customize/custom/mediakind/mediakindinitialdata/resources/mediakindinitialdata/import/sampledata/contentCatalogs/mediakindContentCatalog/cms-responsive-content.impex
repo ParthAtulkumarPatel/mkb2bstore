@@ -134,10 +134,10 @@ INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;n
 ;SafetyNavNodeEntry;;Safety Navigation Node Entry;SafetyNavNode;SafetyCategoryLink;
 ## links of the above navigation nodes ##
 INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;&linkRef;&componentRef;target(code)[default='sameWindow']
-;;PowerDrillsCategoryLink;Power Drills Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Power-Drills/c/1360;PowerDrillsCategoryLink;PowerDrillsCategoryLink
-;;ScrewdriversCategoryLink;Screwdrivers Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Screwdrivers/c/1593;ScrewdriversCategoryLink;ScrewdriversCategoryLink
-;;AngleGrindersCategoryLink;Angle Grinders Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Angle-Grinders/c/1595;AngleGrindersCategoryLink;AngleGrindersCategoryLink
-;;SandersCategoryLink;Sanders Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Sanders/c/1596;SandersCategoryLink;SandersCategoryLink
+;;PowerDrillsCategoryLink;Power Drills Category Link;/360-Event/c/360event;PowerDrillsCategoryLink
+;;ScrewdriversCategoryLink;Screwdrivers Category Link;/Packaging-Products/c/packagingproducts;ScrewdriversCategoryLink;ScrewdriversCategoryLink
+;;AngleGrindersCategoryLink;Angle Grinders Category Link;/ABR-Channels/c/abrchannels;AngleGrindersCategoryLink;AngleGrindersCategoryLink
+;;SandersCategoryLink;Sanders Category Link;/DVR-Subs/c/dvrsubs;SandersCategoryLink;SandersCategoryLink
 ;;MeasuringLayoutToolsCategoryLink;Measuring & Layout Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Measuring-%26-Layout-Tools/c/1358;MeasuringLayoutToolsCategoryLink;MeasuringLayoutToolsCategoryLink
 ;;HandToolsCategoryLink;Hand Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/c/1355;HandToolsCategoryLink;HandToolsCategoryLink
 ;;SafetyCategoryLink;Safety Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Safety/c/1800;SafetyCategoryLink;SafetyCategoryLink

@@ -18,6 +18,18 @@ $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[defa
 $supercategories=supercategories(code, $catalogVersion)
 $baseProduct=baseProduct(code,$catalogVersion)
 $approved=approvalstatus(code)[default='check']
+$lang=en
+$approved=approvalstatus(code)[default='approved']
 
 # Insert Products
 INSERT_UPDATE Product;code[unique=true];$supercategories;manufacturerName;manufacturerAID;unit(code);ean;variantType(code);$catalogVersion;$approved
+
+Create products
+INSERT_UPDATE Product;code[unique=true];$catalogVersion;supercategories(code,$catalogVersion);name[lang=en];unit(code)[default=pieces];$approved;
+;360event1;;360event;360event1;
+;360event2;;360event;360event2;
+;abrchannels1;;abrchannels;abrchannel1;
+;abrchannel2;;abrchannels;abrchannel2;
+;packagingproduct1;;packagingproducts;packaginproduct1;
+;dvrsub1;;dvrsubs;dvrsub1;
+;dvrsub2;;dvrsubs;dvrsub2;

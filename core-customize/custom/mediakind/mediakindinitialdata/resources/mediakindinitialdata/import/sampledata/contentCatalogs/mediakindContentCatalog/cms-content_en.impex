@@ -60,17 +60,17 @@ UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=$
 
 # CMS Link Components
 UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=en]
- ;;AngleGrindersCategoryLink;"Angle Grinders"
+ ;;AngleGrindersCategoryLink;"ABR Channels"
  ;;HandSawsCategoryLink;"Hand Saws"
  ;;HandToolsCategoryLink;"Hand Tools"
  ;;JigsawsCategoryLink;"Jigsaws"
  ;;MeasuringLayoutToolsCategoryLink;"Measuring & Layout Tools"
  ;;NutDriversCategoryLink;"Nut Drivers"
- ;;PowerDrillsCategoryLink;"Power Drills"
+ ;;PowerDrillsCategoryLink;"360 Event"
  ;;PunchesCategoryLink;"Punches"
  ;;RotaryHammersCategoryLink;"Rotary Hammers"
- ;;SandersCategoryLink;"Sanders"
- ;;ScrewdriversCategoryLink;"Screwdrivers"
+ ;;SandersCategoryLink;"DVR Subs"
+ ;;ScrewdriversCategoryLink;"Packaging Products"
  ;;StrippingToolsCategoryLink;"Stripping Tools"
 
 # Lightbox Banner for Mini Cart (banner is not localizable so we must create a separate banner per language)

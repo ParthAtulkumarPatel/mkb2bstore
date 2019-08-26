@@ -14,6 +14,7 @@
 $productCatalog=mediakindProductCatalog
 $productCatalogName=mediakind Product Catalog
 
+
 $catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
 
 # Language
