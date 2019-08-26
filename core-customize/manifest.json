@@ -121,7 +121,7 @@
 		  "persona": "development"
 		}
       ],
-      "webapps": 
+      "webapps": [
 		{
 			"name": "mediakindstorefront",
             "contextPath": ""
