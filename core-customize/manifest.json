@@ -20,42 +20,42 @@
 	"storefrontAddons": [
         {
             "addon": "b2bacceleratoraddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
         {
             "addon": "smarteditaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 		{
             "addon": "assistedservicestorefront",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 		{
             "addon": "commerceorgsamplesaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 	    {
             "addon": "promotionenginesamplesaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 		{
             "addon": "adaptivesearchsamplesaddon",
-            "storefront": "yb2bacceleratorstorefront",
+            "storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
         },
 		{
 			"addon":"sapcoreaddon",
-			"storefront": "yb2bacceleratorstorefront",
+			"storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
 		}
     ],
@@ -122,10 +122,6 @@
 		}
       ],
       "webapps": [
-		{
-			"name": "yb2bacceleratorstorefront",
-            "contextPath": ""
-        },
         {
           "name": "mediaweb",
           "contextPath": "/medias"
