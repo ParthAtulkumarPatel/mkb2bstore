@@ -3,25 +3,17 @@
     <path dir='${HYBRIS_BIN_DIR}' autoload='false' />
 	<path dir='${HYBRIS_BIN_DIR}/ext-integration/sap' autoload='false' />
 	<path dir='${HYBRIS_BIN_DIR}/custom' autoload='false' />
-	<!-- <extension name="mediakindfulfilmentprocess"/>
-	<extension name="mediakindcore"/>
-	<extension name="mediakindinitialdata"/>
-    <extension name="mediakindfacades"/>
-    <extension name="mediakindtest"/>
-    <extension name="mediakindstorefront"/>
-    <extension name="mediakindbackoffice"/>-->
     <extension name='adaptivesearchsolr' />
     <extension name='adaptivesearchbackoffice' />
     <extension name='adaptivesearchsamplesaddon' />
     <extension name='adaptivesearchwebservices' />
     <extension name='b2bcommercebackoffice' />
     <extension name='solrfacetsearchbackoffice' />
-    <extension name='yacceleratorbackoffice' />
+   <!-- <extension name='yacceleratorbackoffice' />
     <extension name='yacceleratorinitialdata' />
     <extension name='yacceleratorfulfilmentprocess' />
-    <extension name='ycommercewebservices' />
+    <extension name='ycommercewebservices' /> -->
     <extension name='orderselfserviceaddon' />
-    <extension name='powertoolsstore' />
     <extension name='solrserver' />
     <extension name='acceleratorwebservicesaddon' />
     <extension name='b2bacceleratoraddon' />
@@ -78,8 +70,9 @@
     <extension name='outboundservices' />
     <extension name='odata2webservices' />
     <extension name='odata2webservicesfeaturetests' />
-    <extension name='yb2bacceleratorstorefront' />
+    <!--<extension name='yb2bacceleratorstorefront' />-->
     <extension name='ysaporderfulfillment' />
+
     <!-- -SCPI related extensions-->
     <extension name='odata2webservices' />
     <extension name='integrationbackoffice' />
@@ -99,5 +92,12 @@
     <extension name='sapcoretest' />
 	<extension name='sapcpiorderexchange' />
     <extension name='sapcpiorderexchangeb2b' />
+	
+	<extension name='mediakindfulfilmentprocess'/>
+	<extension name='mediakindcore'/>
+	<extension name='mediakindinitialdata'/>
+    <extension name='mediakindfacades'/>
+    <extension name='mediakindstorefront'/>
+    <extension name='mediakindbackoffice'/>
   </extensions>
 </hybrisconfig>
