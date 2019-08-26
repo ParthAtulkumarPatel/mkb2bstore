@@ -28,6 +28,7 @@ import java.util.Arrays;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+
 import org.springframework.beans.factory.annotation.Required;
 
 import com.mediakind.initialdata.constants.MediakindInitialDataConstants;
@@ -143,7 +144,7 @@ public class InitialDataSystemSetup extends AbstractSystemSetup
 	}
 
 	@Required
-	public void setSampleDataImportService(final SampleDataImportService sampleDataImportService)
+	public void setSampleDataImportService(final MediakindSampleDataImportService sampleDataImportService)
 	{
 		this.sampleDataImportService = sampleDataImportService;
 	}

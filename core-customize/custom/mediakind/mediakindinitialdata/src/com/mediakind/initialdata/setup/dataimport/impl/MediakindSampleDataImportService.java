@@ -34,10 +34,10 @@ public class MediakindSampleDataImportService extends SampleDataImportService
 
 		getSetupImpexService()
 				.importImpexFile(String.format("/%s/import/sampledata/contentCatalogs/%sContentCatalog/cms-content_en.impex",
-						extensionName, contentCatalogName), false);
+						extensionName, "mediakindContentCatalog"), false);
 		getSetupImpexService()
 				.importImpexFile(String.format("/%s/import/coredata/contentCatalogs/%sContentCatalog/cms-content_en.impex",
-						extensionName, contentCatalogName), false);
+						extensionName, "mediakindContentCatalog"), false);
 	}
 
 
