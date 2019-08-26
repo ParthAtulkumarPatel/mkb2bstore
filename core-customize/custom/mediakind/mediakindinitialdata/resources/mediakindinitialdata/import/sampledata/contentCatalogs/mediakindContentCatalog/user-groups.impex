@@ -8,17 +8,10 @@
 # Information and shall use it only in accordance with the terms of the
 # license agreement you entered into with SAP.
 # -----------------------------------------------------------------------
-# Import Customers
 #
-$regulargroup=regulargroup
-$customergroup=customergroup
+# Import Two Sample B2B Organizations
+#
 
-
-$defaultPassword=12341234
-
-# Create Customer Group
-INSERT_UPDATE Usergroup;uid[unique=true];groups(uid)[mode=append]
-;$regulargroup;customergroup
 
 $defaultPassword=12341234
 INSERT_UPDATE UserGroup;uid[unique=true];groups(uid);locname[lang=en];

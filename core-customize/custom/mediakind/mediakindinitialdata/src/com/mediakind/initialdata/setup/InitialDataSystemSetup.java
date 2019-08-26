@@ -31,6 +31,7 @@ import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Required;
 
 import com.mediakind.initialdata.constants.MediakindInitialDataConstants;
+import com.mediakind.initialdata.setup.dataimport.impl.MediakindSampleDataImportService;
 
 
 /**
@@ -47,7 +48,7 @@ public class InitialDataSystemSetup extends AbstractSystemSetup
 	private static final String ACTIVATE_SOLR_CRON_JOBS = "activateSolrCronJobs";
 
 	private CoreDataImportService coreDataImportService;
-	private SampleDataImportService sampleDataImportService;
+	private MediakindSampleDataImportService sampleDataImportService;
 
 	private static final String MEDIAKIND = "mediakind";
 
@@ -121,6 +122,7 @@ public class InitialDataSystemSetup extends AbstractSystemSetup
 		getEventService().publishEvent(new CoreDataImportedEvent(context, importData));
 
 		getSampleDataImportService().execute(this, context, importData);
+		getSampleDataImportService().importSampleData(context);
 		getEventService().publishEvent(new SampleDataImportedEvent(context, importData));
 	}
 
@@ -135,7 +137,7 @@ public class InitialDataSystemSetup extends AbstractSystemSetup
 		this.coreDataImportService = coreDataImportService;
 	}
 
-	public SampleDataImportService getSampleDataImportService()
+	public MediakindSampleDataImportService getSampleDataImportService()
 	{
 		return sampleDataImportService;
 	}

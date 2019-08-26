@@ -25,7 +25,11 @@
 	      class="com.mediakind.initialdata.setup.InitialDataSystemSetup"
 	      parent="abstractCoreSystemSetup">
 		<property name="coreDataImportService" ref="coreDataImportService"/>
-		<property name="sampleDataImportService" ref="sampleDataImportService"/>
+		<property name="sampleDataImportService" ref="mediakindSampleDataImportService"/>
+	</bean>
+	
+	<bean id="mediakindSampleDataImportService" class="com.mediakind.initialdata.setup.dataimport.impl.MediakindSampleDataImportService" 
+		parent="sampleDataImportService">
 	</bean>
 
 </beans>
