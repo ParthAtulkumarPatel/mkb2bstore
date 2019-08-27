@@ -30,7 +30,7 @@ $pickupInStoreMode=BUY_AND_COLLECT
 $customerAllowedToIgnoreSuggestions=true
 $paymentProvider=Mockup
 $promoGrp=mediakindPromoGroup
-$checkoutFlowGroup=defaultCheckoutGroup
+$checkoutGroup=b2bCheckoutGroup
 
 INSERT_UPDATE PromotionGroup;Identifier[unique=true];
 ;$promoGrp;
