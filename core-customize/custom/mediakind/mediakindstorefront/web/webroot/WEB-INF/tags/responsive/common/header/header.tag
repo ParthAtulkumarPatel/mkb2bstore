@@ -154,7 +154,7 @@
 				</div>
 				<div class="nav__right col-xs-6 col-xs-6 hidden-xs">
 					<ul class="nav__links nav__links--shop_info">
-						<li>
+						<%--<li>
 							<c:if test="${empty hideHeaderLinks}">
 								<ycommerce:testId code="header_StoreFinder_link">
 									<div class="nav-location hidden-xs">
@@ -165,7 +165,7 @@
 									</div>
 								</ycommerce:testId>
 							</c:if>
-						</li>
+						</li>--%>
 						<li>
 							<cms:pageSlot position="MiniCart" var="cart" element="div" class="componentContainer">
 								<cms:component component="${cart}" element="div"/>
