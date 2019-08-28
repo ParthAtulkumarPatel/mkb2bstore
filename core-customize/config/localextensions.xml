@@ -17,6 +17,7 @@
     <extension name='solrserver' />
     <extension name='acceleratorwebservicesaddon' />
     <extension name='b2bacceleratoraddon' />
+	<extension name='commerceorgaddon' />
     <extension name='commerceorgsamplesaddon' />
     <extension name='b2bpunchoutaddon' />
     <extension name='secureportaladdon' />
