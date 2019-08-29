@@ -108,6 +108,10 @@
 			"contextPath": "/authorizationserver"
 		},
 		{
+          "name": "cmswebservices",
+          "contextPath": "/cmswebservices"
+        },
+		{
 			"name": "ycommercewebservices",
 			"contextPath": "/rest"
 		}
