@@ -57,6 +57,11 @@
 			"addon":"sapcoreaddon",
 			"storefront": "mediakindstorefront",
             "template": "yacceleratorstorefront"
+		},
+		{
+			"addon":"acceleratorwebservicesaddon",
+			"storefront": "mediakindstorefront",
+            "template": "yacceleratorstorefront"
 		}
     ],
 		"aspects": [
