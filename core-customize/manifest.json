@@ -112,6 +112,26 @@
           "contextPath": "/cmswebservices"
         },
 		{
+          "name": "personalizationsmartedit",
+          "contextPath": "/personalizationsmartedit"
+        },
+		{
+          "name": "personalizationpromotionssmartedit",
+          "contextPath": "/personalizationpromotionssmartedit"
+        },
+		{
+          "name": "personalizationsearchsmartedit",
+          "contextPath": "/personalizationsearchsmartedit"
+        },
+		{
+          "name": "cmssmarteditwebservices",
+          "contextPath": "/cmssmarteditwebservices"
+        },
+		{
+          "name": "permissionswebservices",
+          "contextPath": "/permissionswebservices"
+        },
+		{
 			"name": "ycommercewebservices",
 			"contextPath": "/rest"
 		}
