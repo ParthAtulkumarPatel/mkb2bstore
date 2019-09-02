@@ -140,6 +140,10 @@
           "contextPath": "/personalizationwebservices"
         },
 		{
+          "name": "mediakindstorefront",
+          "contextPath": "/mediakindstorefront"
+        },
+		{
 			"name": "ycommercewebservices",
 			"contextPath": "/rest"
 		}
