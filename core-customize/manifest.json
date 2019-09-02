@@ -132,6 +132,14 @@
           "contextPath": "/permissionswebservices"
         },
 		{
+          "name": "previewwebservices",
+          "contextPath": "/previewwebservices"
+        },
+		{
+          "name": "personalizationwebservices",
+          "contextPath": "/personalizationwebservices"
+        },
+		{
 			"name": "ycommercewebservices",
 			"contextPath": "/rest"
 		}
