@@ -45,6 +45,7 @@
     <extension name='cmssmartedit' />
     <extension name='cmsbackoffice' />
     <extension name='previewwebservices' />
+	<extension name='personalizationwebservices' />
     <extension name='cmssmarteditwebservices' />
     <extension name='cmsoccaddon' />
     <extension name='previewpersonalizationweb' />

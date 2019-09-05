@@ -112,6 +112,38 @@
           "contextPath": "/cmswebservices"
         },
 		{
+          "name": "personalizationsmartedit",
+          "contextPath": "/personalizationsmartedit"
+        },
+		{
+          "name": "personalizationpromotionssmartedit",
+          "contextPath": "/personalizationpromotionssmartedit"
+        },
+		{
+          "name": "personalizationsearchsmartedit",
+          "contextPath": "/personalizationsearchsmartedit"
+        },
+		{
+          "name": "cmssmarteditwebservices",
+          "contextPath": "/cmssmarteditwebservices"
+        },
+		{
+          "name": "permissionswebservices",
+          "contextPath": "/permissionswebservices"
+        },
+		{
+          "name": "previewwebservices",
+          "contextPath": "/previewwebservices"
+        },
+		{
+          "name": "personalizationwebservices",
+          "contextPath": "/personalizationwebservices"
+        },
+		{
+          "name": "mediakindstorefront",
+          "contextPath": "/mediakindstorefront"
+        },
+		{
 			"name": "ycommercewebservices",
 			"contextPath": "/rest"
 		}
