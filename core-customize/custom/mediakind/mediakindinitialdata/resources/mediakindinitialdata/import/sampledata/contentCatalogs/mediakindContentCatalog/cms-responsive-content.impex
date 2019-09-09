@@ -33,6 +33,9 @@ $mediaContainer=media(qualifier, $contentCV);
 $siteUid=mediakind
 
 
+# Language
+$lang=en
+
 # CMS Site Settings
 UPDATE CMSSite;uid[unique=true];defaultPreviewCategory(code, $productCV);defaultPreviewProduct(code, $productCV);theme(code)
 ;$siteUid;;;lambda
@@ -116,31 +119,44 @@ INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url
 
 ##---- level 4. children of Category Nav ----##
 INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
-;PowerDrillsNavNode;;Power Drills Category;mediakindCategoryNavNode;;PowerDrillsNavNode
-;AngleGrindersNavNode;;Angle Grinders Category;mediakindCategoryNavNode;;AngleGrindersNavNode
-;ScrewdriversNavNode;;Screwdrivers Category;mediakindCategoryNavNode;;ScrewdriversNavNode
-;SandersNavNode;;Sanders Category;mediakindCategoryNavNode;;SandersNavNode
+#;PowerDrillsNavNode;;Power Drills Category;mediakindCategoryNavNode;;PowerDrillsNavNode
+#;AngleGrindersNavNode;;Angle Grinders Category;mediakindCategoryNavNode;;AngleGrindersNavNode
+#;ScrewdriversNavNode;;Screwdrivers Category;mediakindCategoryNavNode;;ScrewdriversNavNode
+#;SandersNavNode;;Sanders Category;mediakindCategoryNavNode;;SandersNavNode
 ;MeasuringLayoutToolsNavNode;;Measuring & Layout Tools Category;mediakindCategoryNavNode;;MeasuringLayoutToolsNavNode
 ;HandToolsNavNode;;Hand Tools Category;mediakindCategoryNavNode;;HandToolsNavNode
 ;SafetyNavNode;;Safety Category;mediakindCategoryNavNode;;SafetyNavNode
+;PackagingProductNavNode;;Packaging Product Category;mediakindCategoryNavNode;;PackagingProductNavNode
+;DVRSubsNavNode;;DVRSubs Category;mediakindCategoryNavNode;;DVRSubsNavNode
+;360eventNavNode;;360 event Category;mediakindCategoryNavNode;;360eventNavNode
+;ABRChannelsNavNode;;ABRChannels Category;mediakindCategoryNavNode;;ABRChannelsNavNode
 ## entries of the above navigation nodes ##
 INSERT_UPDATE CMSNavigationEntry;uid[unique=true];$contentCV[unique=true];name;navigationNode(&nodeRef);item(CMSLinkComponent.uid,CMSLinkComponent.$contentCV);
-;PowerDrillsNavNodeEntry;;Power Drills Navigation Node Entry;PowerDrillsNavNode;PowerDrillsCategoryLink;
-;AngleGrindersNavNodeEntry;;Angle Grinders Navigation Node Entry;AngleGrindersNavNode;AngleGrindersCategoryLink;
-;ScrewdriversNavNodeEntry;;Screwdrivers Navigation Node Entry;ScrewdriversNavNode;ScrewdriversCategoryLink;
-;SandersNavNodeEntry;;Sanders Navigation Node Entry;SandersNavNode;SandersCategoryLink;
-;MeasuringLayoutToolsNavNodeEntry;;Measuring Layout Tools Navigation Node Entry;MeasuringLayoutToolsNavNode;MeasuringLayoutToolsCategoryLink;
-;HandToolsNavNodeEntry;;Hand Tools Navigation Node Entry;HandToolsNavNode;HandToolsCategoryLink;
-;SafetyNavNodeEntry;;Safety Navigation Node Entry;SafetyNavNode;SafetyCategoryLink;
+#;PowerDrillsNavNodeEntry;;Power Drills Navigation Node Entry;PowerDrillsNavNode;PowerDrillsCategoryLink;
+#;AngleGrindersNavNodeEntry;;Angle Grinders Navigation Node Entry;AngleGrindersNavNode;AngleGrindersCategoryLink;
+#;ScrewdriversNavNodeEntry;;Screwdrivers Navigation Node Entry;ScrewdriversNavNode;ScrewdriversCategoryLink;
+#;SandersNavNodeEntry;;Sanders Navigation Node Entry;SandersNavNode;SandersCategoryLink;
+#;MeasuringLayoutToolsNavNodeEntry;;Measuring Layout Tools Navigation Node Entry;MeasuringLayoutToolsNavNode;MeasuringLayoutToolsCategoryLink;
+#;HandToolsNavNodeEntry;;Hand Tools Navigation Node Entry;HandToolsNavNode;HandToolsCategoryLink;
+#;SafetyNavNodeEntry;;Safety Navigation Node Entry;SafetyNavNode;SafetyCategoryLink;
+;PackagingProductNavNodeEntry;;PackagingProduct Navigation Node Entry;PackagingProductNavNode;PackagingProductLink
+;DVRSubsNavNodeEntry;;DVRSubs Navigation Node Entry;DVRSubsNavNode;DVRSubsLink
+;360eventNavNodeEntry;;360event Navigation Node Entry;360eventNavNode;360eventLink
+;ABRChannelsNavNodeEntry;;ABRChannel Navigation Node Entry;ABRChannelsNavNode;ABRChannelsLink
+
 ## links of the above navigation nodes ##
 INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url;&linkRef;&componentRef;target(code)[default='sameWindow']
-;;PowerDrillsCategoryLink;Power Drills Category Link;/360-Event/c/360event;PowerDrillsCategoryLink;PowerDrillsCategoryLink
-;;ScrewdriversCategoryLink;Screwdrivers Category Link;/Packaging-Products/c/packagingproducts;ScrewdriversCategoryLink;ScrewdriversCategoryLink
-;;AngleGrindersCategoryLink;Angle Grinders Category Link;/ABR-Channels/c/abrchannels;AngleGrindersCategoryLink;AngleGrindersCategoryLink
-;;SandersCategoryLink;Sanders Category Link;/DVR-Subs/c/dvrsubs;SandersCategoryLink;SandersCategoryLink
-;;MeasuringLayoutToolsCategoryLink;Measuring & Layout Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Measuring-%26-Layout-Tools/c/1358;MeasuringLayoutToolsCategoryLink;MeasuringLayoutToolsCategoryLink
-;;HandToolsCategoryLink;Hand Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/c/1355;HandToolsCategoryLink;HandToolsCategoryLink
-;;SafetyCategoryLink;Safety Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Safety/c/1800;SafetyCategoryLink;SafetyCategoryLink
+#;;PowerDrillsCategoryLink;Power Drills Category Link;/360-Event/c/360event;PowerDrillsCategoryLink
+#;;ScrewdriversCategoryLink;Screwdrivers Category Link;/Packaging-Products/c/packagingproducts;ScrewdriversCategoryLink;ScrewdriversCategoryLink
+#;;AngleGrindersCategoryLink;Angle Grinders Category Link;/ABR-Channels/c/abrchannels;AngleGrindersCategoryLink;AngleGrindersCategoryLink
+#;;SandersCategoryLink;Sanders Category Link;/DVR-Subs/c/dvrsubs;SandersCategoryLink;SandersCategoryLink
+#;;MeasuringLayoutToolsCategoryLink;Measuring & Layout Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Measuring-%26-Layout-Tools/c/1358;MeasuringLayoutToolsCategoryLink;MeasuringLayoutToolsCategoryLink
+#;;HandToolsCategoryLink;Hand Tools Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/c/1355;HandToolsCategoryLink;HandToolsCategoryLink
+#;;SafetyCategoryLink;Safety Category Link;/Open-Catalogue/Office-Equipment%2C-Supplies-%26-Accessories/Hand-Tools/Safety/c/1800;SafetyCategoryLink;SafetyCategoryLink
+;;360eventLink;360event Link;/360-Event/c/360event;360eventLink;360eventLink
+;;PackagingProductLink;PackagingProduct Link;/Packaging-Products/c/packagingproducts;PackagingProductLink;PackagingProductLink
+;;ABRChannelsLink;ABRChannels Link;/ABR-Channels/c/abrchannels;ABRChannelsLink;ABRChannelsLink
+;;DVRSubsLink;DVRSubs Link;/DVR-Subs/c/dvrsubs;DVRSubsLink;DVRSubsLink
 
 ##----- leve 5. children of HandToolsNavNode -----##
 INSERT_UPDATE CMSNavigationNode;uid[unique=true];$contentCV[unique=true];name;parent(uid, $contentCV);links(&linkRef);&nodeRef
@@ -419,8 +435,8 @@ INSERT_UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];name;url
 ;;StoreFinderLink;Store Finder Link;/store-finder;StoreFinderLink;StoreFinderLink
 
 REMOVE ContentPage;$contentCV[unique=true];uid[unique=true]
-;;account
-;;profile
+#;;account
+#;;profile
 ###### modify some pages End ######
 
 
@@ -1103,3 +1119,22 @@ INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;c
 INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true][default='notFound'];contentSlot(uid,$contentCV)[unique=true]
 ;;MiddleContent-Errorpage;MiddleContent;;MiddleContent-Errorpage
 ######## End of Responsive Error Page #######
+# CMS Link Components
+UPDATE CMSLinkComponent;$contentCV[unique=true];uid[unique=true];linkName[lang=en]
+ ;;DVRSubsLink;"DVR Subs"
+ ;;360eventLink;"360event"
+ ;;PackagingProductLink;"Packaging Products"
+ ;;ABRChannelsLink;"ABRChannels"
+ 
+ # Site Logo Component
+UPDATE SimpleBannerComponent;$contentCV[unique=true];uid[unique=true];$picture[lang=$lang]
+;;SiteLogoComponent;/images/theme/logo_hybris_b2b_responsive.svg
+
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator][forceWrite=true];realfilename;altText;mime[default='image/jpeg'];$contentCV[unique=true];folder(qualifier)[default=images];
+;widescreen;Powertools_1400x480_BigSplash_EN_01_1400W.jpg;$siteResource/images/banners/homepage/responsive/Powertools_1400x480_BigSplash_EN_01_1400W.jpg;Powertools_1400x480_BigSplash_EN_01_1400W.jpg;"The Most Powerful Tools in their Price Range";
+
+INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$contentCV[unique=true]
+;mediakind-homepage-splash-en;Powertools_1400x480_BigSplash_EN_01_1400W.jpg
+
+INSERT_UPDATE SimpleResponsiveBannerComponent;$contentCV[unique=true];uid[unique=true];$mediaContainer
+;;mediakindHompageSplashBannerComponent;mediakind-homepage-splash-en

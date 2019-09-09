@@ -42,16 +42,17 @@ if (warehouse != null)
     line.clear();
 }"
 ;mkDefault;mkDefault Warehouse;
-;mk_warehouse_s;;mediakind
-;mk_warehouse_e;;mediakind
-;mk_warehouse_w;;mediakind
-;mk_warehouse_n;;mediakind
+;mk_warehouse_s;mk_warehouse_s;mediakind
+;mk_warehouse_e;mk_warehouse_e;mediakind
+;mk_warehouse_w;mk_warehouse_w;mediakind
+;mk_warehouse_n;mk_warehouse_n;mediakind
 
 # Create Stock levels at the Warehouses for Products
 INSERT_UPDATE StockLevel;available[unique=true];warehouse(code)[unique=true];inStockStatus(code);maxPreOrder;maxStockLevelHistoryCount;overSelling;preOrder;productCode[unique=true];reserved
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;360event1;0;
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;360event2;0;
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannels1;0;
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannel2;0;
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;packagingproduct1;0;
-;10;mk_warehouse_s ;forceInStock;0;0;0;0;dvrsub1;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;360event1;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;360event2;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannels1;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;abrchannel2;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;packagingproduct1;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;dvrsub1;0;
+;100;mk_warehouse_s ;forceInStock;0;0;0;0;FAL1243024;0;

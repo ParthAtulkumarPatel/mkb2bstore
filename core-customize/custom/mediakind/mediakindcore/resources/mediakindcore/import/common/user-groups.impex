@@ -189,3 +189,24 @@ UPDATE B2BUnit;uid[unique=true];creditLimit(code);accountManager(uid);approvers(
 UPDATE B2BCustomer;uid[unique=true];permissions(code,unit(uid));
 ;hanna.schmidt@pronto-hw.com;Pronto Unlimited Threshold Timespan:Pronto,Pronto 10K USD ORDER:Pronto;
 ;james.bell@pronto-hw.com;Pronto 5K USD ORDER:Pronto;
+
+INSERT_UPDATE B2BUnit;description;uid[unique=true];name;locName[lang=en];groups(uid);reportingOrganization(uid);Addresses(&addId);&B2BUnitID
+#;Hierarchical;Rustic;Rustic;Rustic;;Rustic;RusticAddrID1;RusticID1
+;MediaKind Spain;2410;MediaKind Spain;MediaKind Spain;;2410;MediaKindSpainAddrID1;MediaKindSpainID1
+;MediaKind US;1710;MediaKind US;MediaKind Spain;;1710;MediaKindUSAddrID1;MediaKindUSID1
+
+INSERT_UPDATE B2BCustomer;uid[unique=true];originalUid;email;name;defaultB2BUnit(uid);customerID
+;almacenbcn@insyteinstalaciones.es;almacenbcn@insyteinstalaciones.es;almacenbcn@insyteinstalaciones.es;INSYTE BARCELONA REPARACI;2410;10000005
+;a.piqueras@telyman.es;a.piqueras@telyman.es;a.piqueras@telyman.es;INSYTE CIUDAD REAL MANTEN;1710;10000006
+
+INSERT_UPDATE Address;streetname[unique=true];postalcode[unique=true];town;country(isocode);billingAddress;contactAddress;shippingAddress;unloadingAddress;firstname;lastname;email;title(code);&addId;owner(&B2BUnitID)[unique=true];
+;999 South Wacker Drive;60606;Chicago;US;TRUE;TRUE;TRUE;TRUE;Akiro;Nakamura;almacenbcn@insyteinstalaciones.es;mr;MediaKindSpainAddrID1;MediaKindSpainID1;
+;3000 Lombard Street;94123;San Francisco;US;TRUE;TRUE;TRUE;TRUE;Mark;Stephen;a.piqueras@telyman.es;mr;MediaKindUSAddrID1;MediaKindUSID1;
+
+INSERT_UPDATE B2BCostCenter;code[unique=true];name[lang=en];Unit(uid);budgets(code);currency(isocode)[default='USD']
+;MediaKind Spain;MediaKind Spain;2410;Monthly 50K USD;
+;MediaKind US;MediaKind US;1710;Monthly 20K USD;
+
+INSERT_UPDATE B2BBudget;code[unique=true];Unit(uid);budget;currency(isocode)[allownull=true];dateRange[dateformat=dd.MM.yyyy hh:mm:ss,allownull=true];name[lang=en];;
+;Monthly 50K USD;2410;50000;USD;01.01.2010 00:00:00,12.31.2032 12:59:59;Monthly 50K USD;
+;Monthly 20K USD;1710;50000;USD;01.01.2010 00:00:00,12.31.2032 12:59:59;Monthly 20K USD;

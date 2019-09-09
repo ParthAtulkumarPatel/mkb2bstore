@@ -24,13 +24,78 @@ $others=others(code, $catalogVersion)
 $data_sheet=data_sheet(code, $catalogVersion)
 $medias=medias(code, $catalogVersion)
 $galleryImages=galleryImages(qualifier, $catalogVersion)
-$siteResource=jar:com.mediakind.initialdata.setup.InitialDataSystemSetup&/mediakindinitialdata/import/productCatalogs/$productCatalog
+$siteResource=jar:com.mediakind.initialdata.setup.InitialDataSystemSetup&/mediakindinitialdata/import/sampledata/productCatalogs/$productCatalog
 
-# Create Media
-INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];$media;mime[default='image/jpeg'];$catalogVersion;folder(qualifier)
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;images;images
 
-# Create Media Containers
+INSERT_UPDATE Media;mediaFormat(qualifier);code[unique=true];@media[translator=de.hybris.platform.impex.jalo.media.MediaDataTranslator];mime[default='image/jpeg'];$catalogVersion;folder(qualifier)[default=images]
+;1200Wx1200H;/1200Wx1200H/360event1_1200.png;$siteResource/images/1200Wx1200H/360event1_1200.png
+;515Wx515H;/515Wx515H/360event1_515.png;$siteResource/images/515Wx515H/360event1_515.png
+;300Wx300H;/300Wx300H/360event1_300.png;$siteResource/images/300Wx300H/360event1_300.png
+;96Wx96H;/96Wx96H/360event1_96.png;$siteResource/images/96Wx96H/360event1_96.png
+;65Wx65H;/65Wx65H/360event1_65.png;$siteResource/images/65Wx65H/360event1_65.png
+;1200Wx1200H;/1200Wx1200H/360event2_1200.png;$siteResource/images/1200Wx1200H/360event2_1200.png
+;515Wx515H;/515Wx515H/360event2_515.png;$siteResource/images/515Wx515H/360event2_515.png
+;300Wx300H;/300Wx300H/360event2_300.png;$siteResource/images/300Wx300H/360event2_300.png
+;96Wx96H;/96Wx96H/360event2_96.png;$siteResource/images/96Wx96H/360event2_96.png
+;65Wx65H;/65Wx65H/360event2_65.png;$siteResource/images/65Wx65H/360event2_65.png
+;1200Wx1200H;/1200Wx1200H/abrchannels1_1200.png;$siteResource/images/1200Wx1200H/abrchannels1_1200.png
+;515Wx515H;/515Wx515H/abrchannels1_515.png;$siteResource/images/515Wx515H/abrchannels1_515.png
+;300Wx300H;/300Wx300H/abrchannels1_300.png;$siteResource/images/300Wx300H/abrchannels1_300.png
+;96Wx96H;/96Wx96H/abrchannels1_96.png;$siteResource/images/96Wx96H/abrchannels1_96.png
+;65Wx65H;/65Wx65H/abrchannels1_65.png;$siteResource/images/65Wx65H/abrchannels1_65.png
+;1200Wx1200H;/1200Wx1200H/abrchannels2_1200.png;$siteResource/images/1200Wx1200H/abrchannels2_1200.png
+;515Wx515H;/515Wx515H/abrchannels2_515.png;$siteResource/images/515Wx515H/abrchannels2_515.png
+;300Wx300H;/300Wx300H/abrchannels2_300.png;$siteResource/images/300Wx300H/abrchannels2_300.png
+;96Wx96H;/96Wx96H/abrchannels2_96.png;$siteResource/images/96Wx96H/abrchannels2_96.png
+;65Wx65H;/65Wx65H/abrchannels2_65.png;$siteResource/images/65Wx65H/abrchannels2_65.png
+;1200Wx1200H;/1200Wx1200H/packagingproduct1_1200.png;$siteResource/images/1200Wx1200H/packagingproduct1_1200.png
+;515Wx515H;/515Wx515H/packagingproduct1_515.png;$siteResource/images/515Wx515H/packagingproduct1_515.png
+;300Wx300H;/300Wx300H/packagingproduct1_300.png;$siteResource/images/300Wx300H/packagingproduct1_300.png
+;96Wx96H;/96Wx96H/packagingproduct1_96.png;$siteResource/images/96Wx96H/packagingproduct1_96.png
+;65Wx65H;/65Wx65H/packagingproduct1_65.png;$siteResource/images/65Wx65H/packagingproduct1_65.png
+;1200Wx1200H;/1200Wx1200H/packagingproduct2_1200.png;$siteResource/images/1200Wx1200H/packagingproduct2_1200.png
+;515Wx515H;/515Wx515H/packagingproduct2_515.png;$siteResource/images/515Wx515H/packagingproduct2_515.png
+;300Wx300H;/300Wx300H/packagingproduct2_300.png;$siteResource/images/300Wx300H/packagingproduct2_300.png
+;96Wx96H;/96Wx96H/packagingproduct2_96.png;$siteResource/images/96Wx96H/packagingproduct2_96.png
+;65Wx65H;/65Wx65H/packagingproduct2_65.png;$siteResource/images/65Wx65H/packagingproduct2_65.png
+;1200Wx1200H;/1200Wx1200H/dvrsub1_1200.png;$siteResource/images/1200Wx1200H/dvrsub1_1200.png
+;515Wx515H;/515Wx515H/dvrsub1_515.png;$siteResource/images/515Wx515H/dvrsub1_515.png
+;300Wx300H;/300Wx300H/dvrsub1_300.png;$siteResource/images/300Wx300H/dvrsub1_300.png
+;96Wx96H;/96Wx96H/dvrsub1_96.png;$siteResource/images/96Wx96H/dvrsub1_96.png
+;65Wx65H;/65Wx65H/dvrsub1_65.png;$siteResource/images/65Wx65H/dvrsub1_65.png
+;1200Wx1200H;/1200Wx1200H/dvrsub2_1200.png;$siteResource/images/1200Wx1200H/dvrsub2_1200.png
+;515Wx515H;/515Wx515H/dvrsub2_515.png;$siteResource/images/515Wx515H/dvrsub2_515.png
+;300Wx300H;/300Wx300H/dvrsub2_300.png;$siteResource/images/300Wx300H/dvrsub2_300.png
+;96Wx96H;/96Wx96H/dvrsub2_96.png;$siteResource/images/96Wx96H/dvrsub2_96.png
+;65Wx65H;/65Wx65H/dvrsub2_65.png;$siteResource/images/65Wx65H/dvrsub2_65.png
+;1200Wx1200H;/1200Wx1200H/FAL1243024_1200.png;$siteResource/images/1200Wx1200H/FAL1243024_1200.png
+;515Wx515H;/515Wx515H/FAL1243024_515.png;$siteResource/images/515Wx515H/FAL1243024_515.png
+;300Wx300H;/300Wx300H/FAL1243024_300.png;$siteResource/images/300Wx300H/FAL1243024_300.png
+;96Wx96H;/96Wx96H/FAL1243024_96.png;$siteResource/images/96Wx96H/FAL1243024_96.png
+;65Wx65H;/65Wx65H/FAL1243024_65.png;$siteResource/images/65Wx65H/FAL1243024_65.png
+
+
 INSERT_UPDATE MediaContainer;qualifier[unique=true];$medias;$catalogVersion
+;360event1_Container;/1200Wx1200H/360event1_1200.png,/515Wx515H/360event1_515.png,/300Wx300H/360event1_300.png,/96Wx96H/360event1_96.png,/65Wx65H/360event1_65.png
+;360event2_Container;/1200Wx1200H/360event2_1200.png,/515Wx515H/360event2_515.png,/300Wx300H/360event2_300.png,/96Wx96H/360event2_96.png,/65Wx65H/360event2_65.png
+;abrchannels1_Container;/1200Wx1200H/abrchannels1_1200.png,/515Wx515H/abrchannels1_515.png,/300Wx300H/abrchannels1_300.png,/96Wx96H/abrchannels1_96.png,/65Wx65H/abrchannels1_65.png
+;abrchannels2_Container;/1200Wx1200H/abrchannels2_1200.png,/515Wx515H/abrchannels2_515.png,/300Wx300H/abrchannels2_300.png,/96Wx96H/abrchannels2_96.png,/65Wx65H/abrchannels2_65.png
+;packagingproduct1_Container;/1200Wx1200H/packagingproduct1_1200.png,/515Wx515H/packagingproduct1_515.png,/300Wx300H/packagingproduct1_300.png,/96Wx96H/packagingproduct1_96.png,/65Wx65H/packagingproduct1_65.png
+;packagingproduct2_Container;/1200Wx1200H/packagingproduct2_1200.png,/515Wx515H/packagingproduct2_515.png,/300Wx300H/packagingproduct2_300.png,/96Wx96H/packagingproduct2_96.png,/65Wx65H/packagingproduct2_65.png
+;dvrsub1_Container;/1200Wx1200H/dvrsub1_1200.png,/515Wx515H/dvrsub1_515.png,/300Wx300H/dvrsub1_300.png,/96Wx96H/dvrsub1_96.png,/65Wx65H/dvrsub1_65.png
+;dvrsub2_Container;/1200Wx1200H/dvrsub2_1200.png,/515Wx515H/dvrsub2_515.png,/300Wx300H/dvrsub2_300.png,/96Wx96H/dvrsub2_96.png,/65Wx65H/dvrsub2_65.png
+;FAL1243024_Container;/1200Wx1200H/FAL1243024_1200.png,/515Wx515H/FAL1243024_515.png,/300Wx300H/FAL1243024_300.png,/96Wx96H/FAL1243024_96.png,/65Wx65H/FAL1243024_65.png
 
-# Update Products with Media and Media Containers
-UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+
+INSERT_UPDATE Product;code[unique=true];$picture;$thumbnail;$detail;$others;$normal;$thumbnails;$galleryImages;$catalogVersion
+;360event1;/300Wx300H/360event1_300.png;/96Wx96H/360event1_96.png;/1200Wx1200H/360event1_1200.png;/515Wx515H/360event1_515.png,/65Wx65H/360event1_65.png,/300Wx300H/360event1_300.png;/96Wx96H/360event1_96.png;;360event1_Container
+;360event2;/300Wx300H/360event2_300.png;/96Wx96H/360event2_96.png;/1200Wx1200H/360event2_1200.png;/515Wx515H/360event2_515.png,/65Wx65H/360event2_65.png,/300Wx300H/360event2_300.png;/96Wx96H/360event2_96.png;;360event2_Container
+;abrchannels1;/300Wx300H/abrchannels1_300.png;/96Wx96H/abrchannels1_96.png;/1200Wx1200H/abrchannels1_1200.png;/515Wx515H/abrchannels1_515.png,/65Wx65H/abrchannels1_65.png,/300Wx300H/abrchannels1_300.png;/96Wx96H/abrchannels1_96.png;;abrchannels1_Container
+;abrchannels2;/300Wx300H/abrchannels2_300.png;/96Wx96H/abrchannels2_96.png;/1200Wx1200H/abrchannels2_1200.png;/515Wx515H/abrchannels2_515.png,/65Wx65H/abrchannels2_65.png,/300Wx300H/abrchannels2_300.png;/96Wx96H/abrchannels2_96.png;;abrchannels2_Container
+;packagingproduct1;/300Wx300H/packagingproduct1_300.png;/96Wx96H/packagingproduct1_96.png;/1200Wx1200H/packagingproduct1_1200.png;/515Wx515H/packagingproduct1_515.png,/65Wx65H/packagingproduct1_65.png,/300Wx300H/packagingproduct1_300.png;/96Wx96H/packagingproduct1_96.png;;packagingproduct1_Container
+;packagingproduct2;/300Wx300H/packagingproduct2_300.png;/96Wx96H/packagingproduct2_96.png;/1200Wx1200H/packagingproduct2_1200.png;/515Wx515H/packagingproduct2_515.png,/65Wx65H/packagingproduct2_65.png,/300Wx300H/packagingproduct2_300.png;/96Wx96H/packagingproduct2_96.png;;packagingproduct2_Container
+;dvrsub1;/300Wx300H/dvrsub1_300.png;/96Wx96H/dvrsub1_96.png;/1200Wx1200H/dvrsub1_1200.png;/515Wx515H/dvrsub1_515.png,/65Wx65H/dvrsub1_65.png,/300Wx300H/dvrsub1_300.png;/96Wx96H/dvrsub1_96.png;;dvrsub1_Container
+;dvrsub2;/300Wx300H/dvrsub2_300.png;/96Wx96H/dvrsub2_96.png;/1200Wx1200H/dvrsub2_1200.png;/515Wx515H/dvrsub2_515.png,/65Wx65H/dvrsub2_65.png,/300Wx300H/dvrsub2_300.png;/96Wx96H/dvrsub2_96.png;;dvrsub2_Container
+;FAL1243024;/300Wx300H/FAL1243024_300.png;/96Wx96H/FAL1243024_96.png;/1200Wx1200H/FAL1243024_1200.png;/515Wx515H/FAL1243024_515.png,/65Wx65H/FAL1243024_65.png,/300Wx300H/FAL1243024_300.png;/96Wx96H/FAL1243024_96.png;;FAL1243024_Container

@@ -12,21 +12,52 @@
 
 # Macros / Replacement Parameter definitions
 $productCatalog=mediakindProductCatalog
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$languages=en,zh
 
-$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default='$productCatalog:Staged']
+# Tax & Tax Groups
+INSERT_UPDATE UserTaxGroup;code[unique=true]
+;cn-taxes
+
+INSERT_UPDATE ProductTaxGroup;code[unique=true]
+;cn-sales-tax-full
+
+INSERT_UPDATE Tax;code[unique=true];value;name[lang=en];currency(isocode)
+;cn-sales-tax-full;10;Chinese Sales Tax
+
+#remove hongkong,macau,and taiwan from countries
+REMOVE Country;isocode[unique=true]
+;HK
+;TW
+;MO
+
+# Create default tax row for all products in product catalog
+INSERT_UPDATE TaxRow;$catalogVersion;tax(code)[unique=true];pg(code)[unique=true];ug(code)[unique=true]
+;;cn-sales-tax-full;cn-sales-tax-full;cn-taxes
+
 $prices=Europe1prices[translator=de.hybris.platform.europe1.jalo.impex.Europe1PricesTranslator]
+$taxGroup=Europe1PriceFactory_PTG(code)[default=cn-sales-tax-full]
 
 # Set product approval status to Approved only for those products that have prices.
 $approved=approvalstatus(code)[default='approved']
 
-UPDATE Product;code[unique=true];$prices;$approved;$catalogVersion;Europe1PriceFactory_PTG(code)
+UPDATE Product;code[unique=true];$approved;$catalogVersion;$taxGroup
+;360event1;
+;360event2;
+;abrchannels1;
+;abrchannels2;
+;packagingproduct1;
+;dvrsub1;
+;dvrsub2;
+;FAL1243024;
 
 
 INSERT_UPDATE PriceRow;productId[unique=true];unit(code[unique=true,default=pieces]);currency(isocode)[unique=true];price;minqtd;unitFactor;net
-;360event1;pieces;USD;20,0;1;1;false
-;360event2;pieces;USD;25,0;1;1;false
-;abrchannels1;pieces;USD;35,0;1;1;false
-;abrchannel2;pieces;USD;46,0;1;1;false
-;packagingproduct1;pieces;USD;95,0;1;1;false
-;dvrsub1;pieces;USD;100,0;1;1;false
-;dvrsub2;pieces;USD;150,0;1;1;false
+;360event1;pieces;USD;20,0;1;1;true
+;360event2;pieces;USD;25,0;1;1;true
+;abrchannels1;pieces;USD;35,0;1;1;true
+;abrchannel2;pieces;USD;46,0;1;1;true
+;packagingproduct1;pieces;USD;95,0;1;1;true
+;dvrsub1;pieces;USD;100,0;1;1;true
+;dvrsub2;pieces;USD;150,0;1;1;true
+;FAL1243024;pieces;USD;150,0;1;1;true
