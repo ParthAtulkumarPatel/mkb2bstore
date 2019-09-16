@@ -1,5 +1,11 @@
 {
     "commerceSuiteVersion": "1811.4",
+	"extensionPacks" : [
+	{
+		"name" : "b2ctelco",
+		"version" : "1903"
+	}
+	],
 	"extensions":
 	[
 	
