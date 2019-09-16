@@ -1,11 +1,5 @@
 {
-    "commerceSuiteVersion": "1811.4",
-	"extensionPacks" : [
-	{
-		"name" : "telcomedia",
-		"version" : "1903"
-	}
-	],
+    "commerceSuiteVersion": "1905",
 	"extensions":
 	[
 	
