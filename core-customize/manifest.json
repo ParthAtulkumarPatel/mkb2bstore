@@ -2,7 +2,7 @@
     "commerceSuiteVersion": "1811.4",
 	"extensionPacks" : [
 	{
-		"name" : "b2ctelco",
+		"name" : "media-telco",
 		"version" : "1903"
 	}
 	],
